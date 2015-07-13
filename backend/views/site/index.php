@@ -1,7 +1,7 @@
 <?php
 /* @var $this yii\web\View */
 use common\components\widgets\image\ImageWidget;
-use ovidiupop\test\Show;
+use brainy\test\Show;
 
 $this->title = 'My Yii Application';
 ?>
