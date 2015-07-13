@@ -9,6 +9,8 @@ $this->title = 'My Yii Application';
 
 <?php
 echo Show::widget();
+
+
 //     echo Html::well(
 //        'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.',
 //        Html::LARGE

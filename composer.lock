@@ -1994,12 +1994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pc-brainy/yii2-test.git",
-                "reference": "d8d4fa4a24598fe78effb65801825379a10fdc92"
+                "reference": "947789de3060267bd0d0d8e6e25a68a504bfe791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pc-brainy/yii2-test/zipball/d8d4fa4a24598fe78effb65801825379a10fdc92",
-                "reference": "d8d4fa4a24598fe78effb65801825379a10fdc92",
+                "url": "https://api.github.com/repos/pc-brainy/yii2-test/zipball/947789de3060267bd0d0d8e6e25a68a504bfe791",
+                "reference": "947789de3060267bd0d0d8e6e25a68a504bfe791",
                 "shasum": ""
             },
             "require": {
@@ -2027,7 +2027,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-07-10 07:54:11"
+            "time": "2015-07-10 09:22:20"
         },
         {
             "name": "rmrevin/yii2-fontawesome",
