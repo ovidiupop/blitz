@@ -1,0 +1,1572 @@
+2015-06-16 12:35:37 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(206): yii\db\Connection->getSlavePdo()
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(819): yii\db\Command->prepare(true)
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('up', Array)
+#17 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('up', Array)
+#18 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate/up', Array)
+#19 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate/up', Array)
+#20 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(206): yii\db\Connection->getSlavePdo()
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(819): yii\db\Command->prepare(true)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('up', Array)
+#15 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('up', Array)
+#16 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate/up', Array)
+#17 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate/up', Array)
+#18 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-06-16 12:35:37 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.89'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '27263002'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => '4501c1ad66e94000972cc9d44e78de77'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks/www'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1434458137.6314
+    'REQUEST_TIME' => 1434458137
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/dektrium/yii2-user/migrations'
+    ]
+    'argc' => 3
+]
+2015-06-16 12:43:19 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(206): yii\db\Connection->getSlavePdo()
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(819): yii\db\Command->prepare(true)
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('up', Array)
+#17 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('up', Array)
+#18 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate/up', Array)
+#19 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate/up', Array)
+#20 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(206): yii\db\Connection->getSlavePdo()
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(819): yii\db\Command->prepare(true)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('up', Array)
+#15 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('up', Array)
+#16 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate/up', Array)
+#17 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate/up', Array)
+#18 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-06-16 12:43:18 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.89'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '27263002'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => '4501c1ad66e94000972cc9d44e78de77'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks/www'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1434458598.9646
+    'REQUEST_TIME' => 1434458598
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/dektrium/yii2-user/migrations'
+    ]
+    'argc' => 3
+]
+2015-06-24 10:57:18 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 10:57:18 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: message/app' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('app', Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('app', Array)
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('message/app', Array)
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('message/app', Array)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#6 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "message/app".' in /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php:163
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('message/app', Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#3 {main}
+2015-06-24 10:57:18 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435143438.1914
+    'REQUEST_TIME' => 1435143438
+    'argv' => [
+        0 => './yii'
+        1 => 'message/app'
+        2 => 'messages/app.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 10:57:37 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 10:57:37 [-][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'copy(messages/config.php): failed to open stream: No such file or directory' in /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MessageController.php:65
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'copy(messages/c...', '/home/matricks/...', 65, Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MessageController.php(65): copy('/home/matricks/...', 'messages/config...')
+#2 [internal function]: yii\console\controllers\MessageController->actionConfig('messages/config...')
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('config', Array)
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('config', Array)
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('message/config', Array)
+#8 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('message/config', Array)
+#9 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#11 {main}
+2015-06-24 10:57:37 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435143457.552
+    'REQUEST_TIME' => 1435143457
+    'argv' => [
+        0 => './yii'
+        1 => 'message/config'
+        2 => 'messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 10:58:01 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 10:58:01 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435143481.4684
+    'REQUEST_TIME' => 1435143481
+    'argv' => [
+        0 => './yii'
+        1 => 'message/config'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 10:59:36 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 10:59:36 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435143576.2343
+    'REQUEST_TIME' => 1435143576
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 11:01:44 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 11:01:44 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435143704.2353
+    'REQUEST_TIME' => 1435143704
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 11:06:05 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 11:06:05 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435143965.2834
+    'REQUEST_TIME' => 1435143965
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 11:08:07 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 11:08:07 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435144087.5269
+    'REQUEST_TIME' => 1435144087
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 12:08:22 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 12:08:22 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435147702.0865
+    'REQUEST_TIME' => 1435147702
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 12:13:02 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 12:13:02 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435147982.3834
+    'REQUEST_TIME' => 1435147982
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 12:16:54 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 12:16:54 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'The source path /home/matricks/www/blitz/frontend/messages/../common is not a valid directory.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MessageController.php:101
+Stack trace:
+#0 [internal function]: yii\console\controllers\MessageController->actionExtract('frontend/messag...')
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('message', Array)
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('message', Array)
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#9 {main}
+2015-06-24 12:16:54 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435148214.8914
+    'REQUEST_TIME' => 1435148214
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 12:17:29 [-][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro_RO/user.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/dektrium/yii2-user/messages/ro/user.php
+2015-06-24 12:17:29 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.487'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => 'f098c91b7d3b4000a1b2e35896f29ee0'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435148249.3954
+    'REQUEST_TIME' => 1435148249
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'frontend/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 19:16:46 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'The source path /home/matricks/www/blitz/common/messages../../../ is not a valid directory.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MessageController.php:101
+Stack trace:
+#0 [internal function]: yii\console\controllers\MessageController->actionExtract('common/messages...')
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('message', Array)
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('message', Array)
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#9 {main}
+2015-06-24 19:16:45 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.509'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => '6e39b30d059a400081c082216092f202'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks/www/blitz/common'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435173405.7039
+    'REQUEST_TIME' => 1435173405
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'common/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 19:21:07 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'The source path /home/matricks/www/blitz/common/messages../../ is not a valid directory.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MessageController.php:101
+Stack trace:
+#0 [internal function]: yii\console\controllers\MessageController->actionExtract('common/messages...')
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('message', Array)
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('message', Array)
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#9 {main}
+2015-06-24 19:21:07 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.509'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => '6e39b30d059a400081c082216092f202'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks/www/blitz/common'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435173667.9427
+    'REQUEST_TIME' => 1435173667
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'common/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 19:22:16 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Allowed memory size of 134217728 bytes exhausted (tried to allocate 134231227 bytes)' in /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MessageController.php:251
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-24 19:21:36 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.509'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => '6e39b30d059a400081c082216092f202'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks/www/blitz/common'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435173696.0437
+    'REQUEST_TIME' => 1435173696
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'common/messages/config.php'
+    ]
+    'argc' => 3
+]
+2015-06-24 19:25:56 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'The source path /home/matricks/www/blitz/common/messages/../backend/ is not a valid directory.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/console/controllers/MessageController.php:101
+Stack trace:
+#0 [internal function]: yii\console\controllers\MessageController->actionExtract('common/messages...')
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('message', Array)
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('message', Array)
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/matricks/www/blitz/yii(31): yii\base\Application->run()
+#9 {main}
+2015-06-24 19:25:56 [-][-][-][info][application] $_SERVER = [
+    'LC_PAPER' => 'ro_RO.UTF-8'
+    'XDG_VTNR' => '8'
+    'SSH_AGENT_PID' => '2426'
+    'LC_ADDRESS' => 'ro_RO.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'KDE_MULTIHEAD' => 'false'
+    'LC_MONETARY' => 'ro_RO.UTF-8'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'XDG_SESSION_COOKIE' => '47efa316199d7ea18fdbdbc4553f208a-1434454062.419952-1804552408'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/matricks/.gtkrc-2.0:/home/matricks/.kde/share/config/gtkrc-2.0'
+    'KONSOLE_DBUS_SERVICE' => ':1.509'
+    'KONSOLE_PROFILE_NAME' => 'LinuxMint'
+    'GS_LIB' => '/home/matricks/.fonts'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/matricks/.gtkrc:/home/matricks/.kde/share/config/gtkrc'
+    'WINDOWID' => '104857626'
+    'LC_NUMERIC' => 'ro_RO.UTF-8'
+    'SHELL_SESSION_ID' => '6e39b30d059a400081c082216092f202'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'matricks'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;35:*.pcx=01;35:*.png=01;35:*.pnm=01;35:*.bz2=01;31:*.mpg=01;38:*.mpeg=01;38:*.MPG=01;38:*.MPEG=01;38:*.m4v=01;038:*.mp4=01;038:*.swf=01;038:*.avi=01;38:*.AVI=01;38:*.wmv=01;38:*.WMV=01;38:*.asf=01;38:*.ASF=01;38:*.mov=01;38:*.MOV=01;38:*.mp3=01;39:*.ogg=01;39:*.MP3=01;39:*.Mp3=01;39'
+    'LC_TELEPHONE' => 'ro_RO.UTF-8'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-SVL115bQNcfu/agent.2295'
+    'USERNAME' => 'matricks'
+    'SESSION_MANAGER' => 'local/matricks:@/tmp/.ICE-unix/2595,unix/matricks:/tmp/.ICE-unix/2595'
+    'DEFAULTS_PATH' => '/usr/share/gconf/default.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-default:/etc/xdg'
+    'DESKTOP_SESSION' => 'default'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'LC_IDENTIFICATION' => 'ro_RO.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/home/matricks/www/blitz'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/1'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'en_US.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/default.mandatory.path'
+    'LC_MEASUREMENT' => 'ro_RO.UTF-8'
+    'KONSOLE_DBUS_SESSION' => '/Sessions/1'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'default'
+    'SHLVL' => '1'
+    'HOME' => '/home/matricks'
+    'COLORFGBG' => '0;15'
+    'XDG_SEAT' => 'seat0'
+    'KDE_SESSION_VERSION' => '4'
+    'LANGUAGE' => ''
+    'XCURSOR_THEME' => 'oxy-white'
+    'XDG_SESSION_DESKTOP' => 'default'
+    'LOGNAME' => 'matricks'
+    'XDG_DATA_DIRS' => '/usr/share:/usr/share/default:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Wg6CoAukPu,guid=a11330700f444b5e243ef5a955800830'
+    'MDMSESSION' => 'default'
+    'TEXTDOMAIN' => 'im-config'
+    'WINDOWPATH' => '8'
+    'PROFILEHOME' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'en_US.UTF-8'
+    'QT_PLUGIN_PATH' => '/home/matricks/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/'
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'PAM_KWALLET_LOGIN' => '/tmp//matricks.socket'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'LC_NAME' => 'ro_RO.UTF-8'
+    'XAUTHORITY' => '/tmp/kde-matricks/xauth-1000-_0'
+    'OLDPWD' => '/home/matricks/www/blitz/common'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1435173956.5677
+    'REQUEST_TIME' => 1435173956
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'common/messages/config.php'
+    ]
+    'argc' => 3
+]
