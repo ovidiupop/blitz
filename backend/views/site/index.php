@@ -1,14 +1,17 @@
 <?php
 /* @var $this yii\web\View */
 use common\components\widgets\image\ImageWidget;
-use brainy\test\Show;
+use brainy\uploader\Uploader;
+use yii\helpers\Html;
+
 
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
 <?php
-echo Show::widget();
+//echo Yii::$app->uploader();
+echo Uploader::widget();
 
 
 //     echo Html::well(

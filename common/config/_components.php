@@ -17,12 +17,12 @@ return [
                 ],
             ],
         ],
-        'upload'=>[
-            'class'=>'common\components\upload\UploadWidget',
-//            'controllerMap'=>[
-//                'upload'=>'common\components\upload\UploadController'
-//            ],
-        ],
+//        'upload'=>[
+//            'class'=>'common\components\upload\UploadWidget',
+////            'controllerMap'=>[
+////                'upload'=>'common\components\upload\UploadController'
+////            ],
+//        ],
         
         'authClientCollection' => [
             'class'   => \yii\authclient\Collection::className(),

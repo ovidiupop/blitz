@@ -48,6 +48,6 @@ return array(
     'dmstr\\' => array($vendorDir . '/dmstr/yii2-adminlte-asset'),
     'dektrium\\user\\' => array($vendorDir . '/dektrium/yii2-user'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
-    'brainy\\test\\' => array($vendorDir . '/pc-brainy/yii2-test'),
+    'brainy\\uploader\\' => array($vendorDir . '/pc-brainy/yii2-uploader'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
 );

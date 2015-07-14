@@ -63731,3 +63731,1491 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1436809145.562
     'REQUEST_TIME' => 1436809145
 ]
+2015-07-13 18:41:42 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'kvgrid' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro-RO/kvgrid.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro/kvgrid.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:1113
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:689
+    in /home/matricks/www/blitz/backend/views/pair/index.php:43
+2015-07-13 18:41:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/matricks/www/blitz/backend/views/layouts/_user.php:13
+Stack trace:
+#0 /home/matricks/www/blitz/backend/views/layouts/_user.php(13): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/matricks/...', 13, Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(325): require('/home/matricks/...')
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/matricks/...', Array)
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/matricks/...', Array, NULL)
+#4 /home/matricks/www/blitz/backend/views/layouts/header.php(27): yii\base\View->render('_user', Array)
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(325): require('/home/matricks/...')
+#6 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/matricks/...', Array)
+#7 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/matricks/...', Array, NULL)
+#8 /home/matricks/www/blitz/backend/views/layouts/main.php(35): yii\base\View->render('header', Array)
+#9 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(325): require('/home/matricks/...')
+#10 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/matricks/...', Array)
+#11 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/home/matricks/...', Array, Object(backend\controllers\PairController))
+#12 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('?<div id="w0-pj...')
+#13 /home/matricks/www/blitz/backend/controllers/PairController.php(41): yii\base\Controller->render('index', Array)
+#14 [internal function]: backend\controllers\PairController->actionIndex()
+#15 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#18 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('pair', Array)
+#19 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2015-07-13 18:41:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pnx1gxIPPE89hMQoiMLMV02otTCayUfg\";}'
+    'PHPSESSID' => 'qjji395p2685ra0lc7uanvgn83'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/'
+    'HTTP_COOKIE' => '_csrf=d46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pnx1gxIPPE89hMQoiMLMV02otTCayUfg%22%3B%7D; PHPSESSID=qjji395p2685ra0lc7uanvgn83'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '51136'
+    'REDIRECT_URL' => '/blitz/backend/web/pair'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/pair'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436812902.356
+    'REQUEST_TIME' => 1436812902
+]
+2015-07-13 18:41:48 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'kvgrid' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro-RO/kvgrid.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro/kvgrid.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:1113
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:689
+    in /home/matricks/www/blitz/backend/views/pair/index.php:43
+2015-07-13 18:41:48 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pnx1gxIPPE89hMQoiMLMV02otTCayUfg\";}'
+    'PHPSESSID' => '604bmu5rfkal5j16a1t2ht2jl4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/blitz/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/'
+    'HTTP_COOKIE' => '_csrf=d46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pnx1gxIPPE89hMQoiMLMV02otTCayUfg%22%3B%7D; PHPSESSID=604bmu5rfkal5j16a1t2ht2jl4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '51141'
+    'REDIRECT_URL' => '/blitz/backend/web/pair'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/pair'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436812908.838
+    'REQUEST_TIME' => 1436812908
+]
+2015-07-13 18:42:01 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'kvgrid' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro-RO/kvgrid.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro/kvgrid.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:1113
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:689
+    in /home/matricks/www/blitz/backend/views/params/index.php:64
+2015-07-13 18:42:01 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pnx1gxIPPE89hMQoiMLMV02otTCayUfg\";}'
+    'PHPSESSID' => '604bmu5rfkal5j16a1t2ht2jl4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/blitz/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/pair'
+    'HTTP_COOKIE' => '_csrf=d46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pnx1gxIPPE89hMQoiMLMV02otTCayUfg%22%3B%7D; PHPSESSID=604bmu5rfkal5j16a1t2ht2jl4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '51144'
+    'REDIRECT_URL' => '/blitz/backend/web/params/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/params/index'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436812921.722
+    'REQUEST_TIME' => 1436812921
+]
+2015-07-13 18:42:09 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'kvgrid' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro-RO/kvgrid.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro/kvgrid.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:1113
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:689
+    in /home/matricks/www/blitz/backend/views/params/index.php:64
+2015-07-13 18:42:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'ParamsSearch' => [
+        'id' => ''
+        'app_id' => 'frontend'
+        'name' => ''
+        'value' => ''
+    ]
+    '_pjax' => '#w0-pjax'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pnx1gxIPPE89hMQoiMLMV02otTCayUfg\";}'
+    'PHPSESSID' => '604bmu5rfkal5j16a1t2ht2jl4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_X_CSRF_TOKEN' => 'eG41R2ZtOGgoAE12ARVxOCgrDX4OIGkHESN5CjBdCgcMOnYmHzheDw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0-pjax'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/params/index'
+    'HTTP_COOKIE' => '_csrf=d46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pnx1gxIPPE89hMQoiMLMV02otTCayUfg%22%3B%7D; PHPSESSID=604bmu5rfkal5j16a1t2ht2jl4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '51145'
+    'REDIRECT_QUERY_STRING' => 'ParamsSearch%5Bid%5D=&ParamsSearch%5Bapp_id%5D=frontend&ParamsSearch%5Bname%5D=&ParamsSearch%5Bvalue%5D=&_pjax=%23w0-pjax'
+    'REDIRECT_URL' => '/blitz/backend/web/params/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'ParamsSearch%5Bid%5D=&ParamsSearch%5Bapp_id%5D=frontend&ParamsSearch%5Bname%5D=&ParamsSearch%5Bvalue%5D=&_pjax=%23w0-pjax'
+    'REQUEST_URI' => '/blitz/backend/web/params/index?ParamsSearch%5Bid%5D=&ParamsSearch%5Bapp_id%5D=frontend&ParamsSearch%5Bname%5D=&ParamsSearch%5Bvalue%5D=&_pjax=%23w0-pjax'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436812929.853
+    'REQUEST_TIME' => 1436812929
+]
+2015-07-13 18:42:13 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'kvgrid' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro-RO/kvgrid.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro/kvgrid.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:1113
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:689
+    in /home/matricks/www/blitz/backend/views/params/index.php:64
+2015-07-13 18:42:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'ParamsSearch' => [
+        'id' => ''
+        'app_id' => 'common'
+        'name' => ''
+        'value' => ''
+    ]
+    '_pjax' => '#w0-pjax'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pnx1gxIPPE89hMQoiMLMV02otTCayUfg\";}'
+    'PHPSESSID' => '604bmu5rfkal5j16a1t2ht2jl4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_X_CSRF_TOKEN' => 'eG41R2ZtOGgoAE12ARVxOCgrDX4OIGkHESN5CjBdCgcMOnYmHzheDw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0-pjax'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/params/index?ParamsSearch%5Bid%5D=&ParamsSearch%5Bapp_id%5D=frontend&ParamsSearch%5Bname%5D=&ParamsSearch%5Bvalue%5D='
+    'HTTP_COOKIE' => '_csrf=d46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pnx1gxIPPE89hMQoiMLMV02otTCayUfg%22%3B%7D; PHPSESSID=604bmu5rfkal5j16a1t2ht2jl4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '51146'
+    'REDIRECT_QUERY_STRING' => 'ParamsSearch%5Bid%5D=&ParamsSearch%5Bapp_id%5D=common&ParamsSearch%5Bname%5D=&ParamsSearch%5Bvalue%5D=&_pjax=%23w0-pjax&_pjax=%23w0-pjax'
+    'REDIRECT_URL' => '/blitz/backend/web/params/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'ParamsSearch%5Bid%5D=&ParamsSearch%5Bapp_id%5D=common&ParamsSearch%5Bname%5D=&ParamsSearch%5Bvalue%5D=&_pjax=%23w0-pjax&_pjax=%23w0-pjax'
+    'REQUEST_URI' => '/blitz/backend/web/params/index?ParamsSearch%5Bid%5D=&ParamsSearch%5Bapp_id%5D=common&ParamsSearch%5Bname%5D=&ParamsSearch%5Bvalue%5D=&_pjax=%23w0-pjax&_pjax=%23w0-pjax'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436812933.507
+    'REQUEST_TIME' => 1436812933
+]
+2015-07-13 18:43:16 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'kvgrid' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro-RO/kvgrid.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro/kvgrid.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:1113
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:689
+    in /home/matricks/www/blitz/backend/views/page/index.php:90
+2015-07-13 18:43:15 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pnx1gxIPPE89hMQoiMLMV02otTCayUfg\";}'
+    'PHPSESSID' => '604bmu5rfkal5j16a1t2ht2jl4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/blitz/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/params/create'
+    'HTTP_COOKIE' => '_csrf=d46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pnx1gxIPPE89hMQoiMLMV02otTCayUfg%22%3B%7D; PHPSESSID=604bmu5rfkal5j16a1t2ht2jl4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '51151'
+    'REDIRECT_URL' => '/blitz/backend/web/page/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/page/index'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436812995.956
+    'REQUEST_TIME' => 1436812995
+]
+2015-07-13 18:43:28 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'kvgrid' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro-RO/kvgrid.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro/kvgrid.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:1113
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:689
+    in /home/matricks/www/blitz/backend/views/user/admin/index.php:207
+2015-07-13 18:43:28 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pnx1gxIPPE89hMQoiMLMV02otTCayUfg\";}'
+    'PHPSESSID' => '604bmu5rfkal5j16a1t2ht2jl4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/blitz/backend/web/'
+    '__id' => 1
+    'actions-redirect' => '/blitz/backend/web/user/admin/index'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/page/create'
+    'HTTP_COOKIE' => '_csrf=d46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pnx1gxIPPE89hMQoiMLMV02otTCayUfg%22%3B%7D; PHPSESSID=604bmu5rfkal5j16a1t2ht2jl4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '51158'
+    'REDIRECT_URL' => '/blitz/backend/web/user/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/user/admin/index'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436813008.245
+    'REQUEST_TIME' => 1436813008
+]
+2015-07-13 18:44:11 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'kvgrid' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro-RO/kvgrid.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/messages/ro/kvgrid.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:1113
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-grid/GridView.php:689
+    in /home/matricks/www/blitz/backend/views/user/admin/index.php:207
+2015-07-13 18:44:11 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pnx1gxIPPE89hMQoiMLMV02otTCayUfg\";}'
+    'PHPSESSID' => '604bmu5rfkal5j16a1t2ht2jl4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/blitz/backend/web/'
+    '__id' => 1
+    'actions-redirect' => '/blitz/backend/web/user/admin/index'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/role/create'
+    'HTTP_COOKIE' => '_csrf=d46bcfe7b43ddd3dee75f961d3a1ec0fe10d3e2649a7a4670ecac9a0b5e99f5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pnx1gxIPPE89hMQoiMLMV02otTCayUfg%22%3B%7D; PHPSESSID=604bmu5rfkal5j16a1t2ht2jl4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '51162'
+    'REDIRECT_URL' => '/blitz/backend/web/user/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/user/admin/index'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436813051.641
+    'REQUEST_TIME' => 1436813051
+]
+2015-07-14 06:57:49 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'fileinput' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro-RO/fileinput.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro/fileinput.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/FileInput.php:70
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/views/uploader.php:23
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/Show.php:12
+2015-07-14 06:57:49 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/login'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54062'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436857069.376
+    'REQUEST_TIME' => 1436857069
+]
+2015-07-14 06:58:59 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'fileinput' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro-RO/fileinput.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro/fileinput.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/FileInput.php:70
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/views/uploader.php:23
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/Show.php:12
+2015-07-14 06:58:59 [127.0.0.1][1][-][info][application] $_POST = [
+    'file_id' => '0'
+]
+
+$_FILES = [
+    'imagine' => [
+        'name' => 'laptop-second-hand-lenovo-thinkpad-t60-intel-core2-duo-t5500-166ghz-2gb-ddr2-80gb-hdd-dvd-wifi-display-14-176205.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/php1oRjEA'
+        'error' => 0
+        'size' => 38495
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_X_CSRF_TOKEN' => 'dHd4UXJBWFdCBSJhMHkhYBYbSwcRDxscLlobBhc0Gg4dOAJnERJrOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/'
+    'CONTENT_LENGTH' => '38934'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------3709635151852847149368425175'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54071'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436857139.348
+    'REQUEST_TIME' => 1436857139
+]
+2015-07-14 06:58:59 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'fileinput' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro-RO/fileinput.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro/fileinput.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/FileInput.php:70
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/views/uploader.php:23
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/Show.php:12
+2015-07-14 06:58:59 [127.0.0.1][1][-][info][application] $_POST = [
+    'file_id' => '1'
+]
+
+$_FILES = [
+    'imagine' => [
+        'name' => 'laptop-second-hand-lenovo-thinkpad-t60-intel-core2-duo-t5500-166ghz-2gb-ddr2-80gb-hdd-dvd-wifi-display-14-269304.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/php5TncGA'
+        'error' => 0
+        'size' => 60910
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_X_CSRF_TOKEN' => 'dHd4UXJBWFdCBSJhMHkhYBYbSwcRDxscLlobBhc0Gg4dOAJnERJrOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/'
+    'CONTENT_LENGTH' => '61346'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------180117854989224848737308417'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54072'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436857139.372
+    'REQUEST_TIME' => 1436857139
+]
+2015-07-14 06:58:59 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'fileinput' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro-RO/fileinput.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro/fileinput.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/FileInput.php:70
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/views/uploader.php:23
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/Show.php:12
+2015-07-14 06:58:59 [127.0.0.1][1][-][info][application] $_POST = [
+    'file_id' => '2'
+]
+
+$_FILES = [
+    'imagine' => [
+        'name' => 'laptop-second-hand-lenovo-thinkpad-t60-intel-core2-duo-t5500-166ghz-2gb-ddr2-80gb-hdd-dvd-wifi-display-14-346779.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/phpLkwMKA'
+        'error' => 0
+        'size' => 29205
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_X_CSRF_TOKEN' => 'dHd4UXJBWFdCBSJhMHkhYBYbSwcRDxscLlobBhc0Gg4dOAJnERJrOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/'
+    'CONTENT_LENGTH' => '29644'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------8217487167088953461206171468'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54073'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436857139.4
+    'REQUEST_TIME' => 1436857139
+]
+2015-07-14 07:05:34 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'fileinput' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro-RO/fileinput.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro/fileinput.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/FileInput.php:70
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/views/uploader.php:25
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/Show.php:12
+2015-07-14 07:05:34 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/login'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54093'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436857534.801
+    'REQUEST_TIME' => 1436857534
+]
+2015-07-14 07:05:43 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/upload' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('upload', Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/upload', Array)
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Pagina nu a fost găsită.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-07-14 07:05:43 [127.0.0.1][-][-][info][application] $_POST = [
+    'file_id' => '0'
+]
+
+$_FILES = [
+    'imagine' => [
+        'name' => 'laptop-second-hand-lenovo-thinkpad-t60-intel-core2-duo-t5500-166ghz-2gb-ddr2-80gb-hdd-dvd-wifi-display-14-269304.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/phpyeka8j'
+        'error' => 0
+        'size' => 60910
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_X_CSRF_TOKEN' => 'Tm1sVWd4UTB4HzZlJUAoBywBXwMENhJ7FEAPAgINE2knIhZjBCtiXA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/'
+    'CONTENT_LENGTH' => '61352'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------66808409313429734402090853483'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54101'
+    'REDIRECT_URL' => '/blitz/backend/web/site/upload'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/site/upload'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436857543.952
+    'REQUEST_TIME' => 1436857543
+]
+2015-07-14 07:14:00 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'fileinput' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro-RO/fileinput.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro/fileinput.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/FileInput.php:70
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/views/uploader.php:25
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-test/Show.php:12
+2015-07-14 07:14:00 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/login'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436858040.07
+    'REQUEST_TIME' => 1436858040
+]
+2015-07-14 07:14:35 [127.0.0.1][1][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\Application::uploader()' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /home/matricks/www/blitz/backend/views/site/index.php(12): yii\base\Component->__call('uploader', Array)
+#1 /home/matricks/www/blitz/backend/views/site/index.php(12): yii\web\Application->uploader()
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(325): require('/home/matricks/...')
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/matricks/...', Array)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/matricks/...', Array, Object(backend\controllers\SiteController))
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#6 /home/matricks/www/blitz/backend/controllers/SiteController.php(58): yii\base\Controller->render('index')
+#7 [internal function]: backend\controllers\SiteController->actionIndex()
+#8 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#11 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-07-14 07:14:35 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/login'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54123'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436858075.712
+    'REQUEST_TIME' => 1436858075
+]
+2015-07-14 07:14:35 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sizzle.min.map".' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sizzle.min.map', Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Pagina nu a fost găsită.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-07-14 07:14:35 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54124'
+    'REDIRECT_URL' => '/blitz/backend/web/sizzle.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/sizzle.min.map'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436858075.923
+    'REQUEST_TIME' => 1436858075
+]
+2015-07-14 07:15:33 [127.0.0.1][1][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\Application::uploader()' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /home/matricks/www/blitz/backend/views/site/index.php(12): yii\base\Component->__call('uploader', Array)
+#1 /home/matricks/www/blitz/backend/views/site/index.php(12): yii\web\Application->uploader()
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(325): require('/home/matricks/...')
+#3 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/matricks/...', Array)
+#4 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/matricks/...', Array, Object(backend\controllers\SiteController))
+#5 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#6 /home/matricks/www/blitz/backend/controllers/SiteController.php(58): yii\base\Controller->render('index')
+#7 [internal function]: backend\controllers\SiteController->actionIndex()
+#8 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#11 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-07-14 07:15:33 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/login'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54128'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436858133.035
+    'REQUEST_TIME' => 1436858133
+]
+2015-07-14 07:15:33 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sizzle.min.map".' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sizzle.min.map', Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Pagina nu a fost găsită.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-07-14 07:15:33 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54129'
+    'REDIRECT_URL' => '/blitz/backend/web/sizzle.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/sizzle.min.map'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436858133.223
+    'REQUEST_TIME' => 1436858133
+]
+2015-07-14 07:17:31 [127.0.0.1][1][tti9m1nc74din63ss8246itrd0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method yii\helpers\Html::well()' in /home/matricks/www/blitz/backend/views/site/index.php:17
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-07-14 07:17:31 [127.0.0.1][1][tti9m1nc74din63ss8246itrd0][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/login'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436858251.786
+    'REQUEST_TIME' => 1436858251
+]
+2015-07-14 07:17:31 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sizzle.min.map".' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sizzle.min.map', Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Pagina nu a fost găsită.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-07-14 07:17:31 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tti9m1nc74din63ss8246itrd0'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'PHPSESSID=tti9m1nc74din63ss8246itrd0; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54143'
+    'REDIRECT_URL' => '/blitz/backend/web/sizzle.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/sizzle.min.map'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436858251.971
+    'REQUEST_TIME' => 1436858251
+]
+2015-07-14 08:14:27 [127.0.0.1][1][234lshq73b43s0vce3jtucq7c2][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'fileinput' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro-RO/fileinput.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro/fileinput.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/FileInput.php:70
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-uploader/views/uploader.php:24
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-uploader/Uploader.php:12
+2015-07-14 08:14:27 [127.0.0.1][1][234lshq73b43s0vce3jtucq7c2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method yii\helpers\Html::well()' in /home/matricks/www/blitz/backend/views/site/index.php:17
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-07-14 08:14:27 [127.0.0.1][1][234lshq73b43s0vce3jtucq7c2][info][application] $_COOKIE = [
+    'PHPSESSID' => '234lshq73b43s0vce3jtucq7c2'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/blitz/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/login'
+    'HTTP_COOKIE' => 'PHPSESSID=234lshq73b43s0vce3jtucq7c2; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54734'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436861667.899
+    'REQUEST_TIME' => 1436861667
+]
+2015-07-14 08:14:28 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sizzle.min.map".' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sizzle.min.map', Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Pagina nu a fost găsită.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-07-14 08:14:28 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '234lshq73b43s0vce3jtucq7c2'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/blitz/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'PHPSESSID=234lshq73b43s0vce3jtucq7c2; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54733'
+    'REDIRECT_URL' => '/blitz/backend/web/sizzle.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/sizzle.min.map'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436861668.135
+    'REQUEST_TIME' => 1436861668
+]
+2015-07-14 08:14:36 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'fileinput' does not exist: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro-RO/fileinput.php Fallback file does not exist as well: /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/messages/ro/fileinput.php
+    in /home/matricks/www/blitz/vendor/kartik-v/yii2-widget-fileinput/FileInput.php:70
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-uploader/views/uploader.php:24
+    in /home/matricks/www/blitz/vendor/pc-brainy/yii2-uploader/Uploader.php:12
+2015-07-14 08:14:36 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '234lshq73b43s0vce3jtucq7c2'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/blitz/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/login'
+    'HTTP_COOKIE' => 'PHPSESSID=234lshq73b43s0vce3jtucq7c2; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54740'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436861676.485
+    'REQUEST_TIME' => 1436861676
+]
+2015-07-14 08:25:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/upload' in /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('upload', Array)
+#1 /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/upload', Array)
+#2 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Pagina nu a fost găsită.' in /home/matricks/www/blitz/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/matricks/www/blitz/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/matricks/www/blitz/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-07-14 08:25:20 [127.0.0.1][-][-][info][application] $_POST = [
+    'file_id' => '0'
+]
+
+$_FILES = [
+    'imagine' => [
+        'name' => 'laptop-second-hand-lenovo-thinkpad-t60-intel-core2-duo-t5500-166ghz-2gb-ddr2-80gb-hdd-dvd-wifi-display-14-176205.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => '/tmp/phpuIzZOm'
+        'error' => 0
+        'size' => 38495
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '234lshq73b43s0vce3jtucq7c2'
+    '_csrf' => 'f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_X_CSRF_TOKEN' => 'Qm9TNkpVdGN0HQkGCG0NVCADYGApGzcoGEIwYS8gNjorICkAKQZHDw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/blitz/backend/web/'
+    'CONTENT_LENGTH' => '38940'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------117429002620346663501533141724'
+    'HTTP_COOKIE' => 'PHPSESSID=234lshq73b43s0vce3jtucq7c2; _csrf=f6c06e97bd95da864b4a1e61477a8600834b14d2dd652e2606ed7e723d102e8fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226rZ0B8y7bl3VcNCKZ-cWeuBYiOz6cS3l%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/matricks/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/matricks/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/matricks/www/blitz/backend/web/index.php'
+    'REMOTE_PORT' => '54765'
+    'REDIRECT_URL' => '/blitz/backend/web/site/upload'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blitz/backend/web/site/upload'
+    'SCRIPT_NAME' => '/blitz/backend/web/index.php'
+    'PHP_SELF' => '/blitz/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1436862320.295
+    'REQUEST_TIME' => 1436862320
+]

@@ -10,6 +10,10 @@ return [
         'common\base\settings',
     ],    
     'modules' => [
+        'uploader'=>[
+            'class' => 'brainy\test',
+            
+        ],
         'user' => [
             'class' => 'dektrium\user\Module',
             'enableUnconfirmedLogin' => true,

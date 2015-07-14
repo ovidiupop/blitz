@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7bf018717ed4c501d1810d8557b9061b",
+    "hash": "e69904e149eae03738af0b2ce206ca03",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -1989,17 +1989,17 @@
             "time": "2015-04-21 15:37:51"
         },
         {
-            "name": "pc-brainy/yii2-test",
+            "name": "pc-brainy/yii2-uploader",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pc-brainy/yii2-test.git",
-                "reference": "947789de3060267bd0d0d8e6e25a68a504bfe791"
+                "url": "https://github.com/pc-brainy/yii2-uploader.git",
+                "reference": "25d4ed00f7cbd91b020a6966dc07d0810f14be66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pc-brainy/yii2-test/zipball/947789de3060267bd0d0d8e6e25a68a504bfe791",
-                "reference": "947789de3060267bd0d0d8e6e25a68a504bfe791",
+                "url": "https://api.github.com/repos/pc-brainy/yii2-uploader/zipball/25d4ed00f7cbd91b020a6966dc07d0810f14be66",
+                "reference": "25d4ed00f7cbd91b020a6966dc07d0810f14be66",
                 "shasum": ""
             },
             "require": {
@@ -2009,7 +2009,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "brainy\\test\\": ""
+                    "brainy\\uploader\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2022,12 +2022,12 @@
                     "email": "matricks@webspider.ro"
                 }
             ],
-            "description": "test",
+            "description": "Images uploader",
             "keywords": [
                 "extension",
                 "yii2"
             ],
-            "time": "2015-07-10 09:22:20"
+            "time": "2015-07-14 07:34:00"
         },
         {
             "name": "rmrevin/yii2-fontawesome",
@@ -2783,7 +2783,7 @@
         "kartik-v/yii2-widgets": 20,
         "kartik-v/yii2-grid": 20,
         "kartik-v/yii2-mpdf": 20,
-        "pc-brainy/yii2-test": 20
+        "pc-brainy/yii2-uploader": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

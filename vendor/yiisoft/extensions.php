@@ -328,6 +328,15 @@ return array (
       '@kartik/grid' => $vendorDir . '/kartik-v/yii2-grid',
     ),
   ),
+  'pc-brainy/yii2-test' => 
+  array (
+    'name' => 'pc-brainy/yii2-test',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@brainy/test' => $vendorDir . '/pc-brainy/yii2-test',
+    ),
+  ),
   'kartik-v/yii2-widget-activeform' => 
   array (
     'name' => 'kartik-v/yii2-widget-activeform',
@@ -337,13 +346,13 @@ return array (
       '@kartik/form' => $vendorDir . '/kartik-v/yii2-widget-activeform',
     ),
   ),
-  'pc-brainy/yii2-test' => 
+  'pc-brainy/yii2-uploader' => 
   array (
-    'name' => 'pc-brainy/yii2-test',
+    'name' => 'pc-brainy/yii2-uploader',
     'version' => '9999999-dev',
     'alias' => 
     array (
-      '@brainy/test' => $vendorDir . '/pc-brainy/yii2-test',
+      '@brainy/uploader' => $vendorDir . '/pc-brainy/yii2-uploader',
     ),
   ),
 );
