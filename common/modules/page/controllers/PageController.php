@@ -18,30 +18,30 @@ class PageController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['view', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['create', 'update'],
-                        'allow' => true,
-                        'roles' => ['admin'],
-                    ],
-                    [
-                        'actions' => ['update'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                    [
-                        'actions' => ['update'],
-                        'allow' => false,
-                        'roles' => ['*'],
-                    ],   
-                ],
-            ],            
+//            'access' => [
+//                'class' => AccessControl::className(),
+//                'rules' => [
+//                    [
+//                        'actions' => ['view', 'error'],
+//                        'allow' => true,
+//                    ],
+//                    [
+//                        'actions' => ['create', 'update'],
+//                        'allow' => true,
+//                        'roles' => ['admin'],
+//                    ],
+//                    [
+//                        'actions' => ['update'],
+//                        'allow' => true,
+//                        'roles' => ['@'],
+//                    ],
+//                    [
+//                        'actions' => ['update'],
+//                        'allow' => false,
+//                        'roles' => ['*'],
+//                    ],   
+//                ],
+//            ],            
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
