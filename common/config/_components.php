@@ -16,14 +16,8 @@ return [
                     '@dektrium/user/views' => '@app/views/user'
                 ],
             ],
-        ],
-//        'upload'=>[
-//            'class'=>'common\components\upload\UploadWidget',
-////            'controllerMap'=>[
-////                'upload'=>'common\components\upload\UploadController'
-////            ],
-//        ],
-        
+        ], 
+       
         'authClientCollection' => [
             'class'   => \yii\authclient\Collection::className(),
             'clients' => [

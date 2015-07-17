@@ -89,7 +89,7 @@ return backend\components\widgets\Menu::widget([
                     'items' => [
                                 [
                                     'label' => Yii::t('app', 'Pages'),
-                                    'url' => ['/page/index'],
+                                    'url' => ['/page/page/index'],
                                     'icon' => '<i class="fa fa-list-ol"></i>'
                                 ],
                     ]

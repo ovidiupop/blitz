@@ -30,18 +30,30 @@ class User extends BaseUser
     }
     
     public function getIsAdmin(){
+        if(Yii::$app->user->isGuest){
+            return false;
+        }
         return $this->can('admin');
     } 
     
     public function getIsMaster(){
+        if(Yii::$app->user->isGuest){
+            return false;
+        }
         return $this->can('master');        
     }
 
     public function getIsOperator(){
+        if(Yii::$app->user->isGuest){
+            return false;
+        }
         return $this->can('operator');        
     }
     
     public function getIsEditor(){
+        if(Yii::$app->user->isGuest){
+            return false;
+        }
         return $this->can('editor');        
     }
 

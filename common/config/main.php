@@ -5,14 +5,18 @@ return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => require(__DIR__.'/_components.php'), 
     
+    'controllerMap' => [
+            'uploader' => 'brainy\uploader\controllers\UploaderController',
+    ],
+    
     //here we set all params for app
     'bootstrap' => [
         'common\base\settings',
-    ],    
+    ],   
+    
     'modules' => [
-        'uploader'=>[
-            'class' => 'brainy\test',
-            
+        'page' => [
+            'class' => 'common\modules\page\Page',
         ],
         'user' => [
             'class' => 'dektrium\user\Module',
