@@ -91,4 +91,8 @@ class Page extends \yii\db\ActiveRecord
     public function getSlugId(){
         return $this->slug .'-'.$this->id;
     }
+    
+    public function getUrl(){
+        return $this->slugId;
+    }
 }

@@ -36,7 +36,18 @@ return [
         ],
         'topmenu'=>[
             'class'=>'frontend\components\widgets\topmenu'
-        ],    
+        ],  
+	'view'=>[
+            'theme' => [
+                'baseUrl' => '@web/../themes/margo',
+                'pathMap' => [
+                    '@app/views' =>[
+			'@app/themes/margo',
+//			'@app/themes/yourtheme'
+                    ]
+		],
+            ],
+	],        
     ],
    
     

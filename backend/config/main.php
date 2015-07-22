@@ -13,7 +13,7 @@ $config = [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
-
+    
     'components' => [
         'urlManagerFrontEnd' => [
             'class' => 'yii\web\urlManager',

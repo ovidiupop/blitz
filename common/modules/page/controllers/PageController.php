@@ -18,30 +18,32 @@ class PageController extends Controller
     public function behaviors()
     {
         return [
-//            'access' => [
-//                'class' => AccessControl::className(),
-//                'rules' => [
-//                    [
-//                        'actions' => ['view', 'error'],
-//                        'allow' => true,
-//                    ],
-//                    [
-//                        'actions' => ['create', 'update'],
-//                        'allow' => true,
-//                        'roles' => ['admin'],
-//                    ],
-//                    [
-//                        'actions' => ['update'],
-//                        'allow' => true,
-//                        'roles' => ['@'],
-//                    ],
-//                    [
-//                        'actions' => ['update'],
-//                        'allow' => false,
-//                        'roles' => ['*'],
-//                    ],   
-//                ],
-//            ],            
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['view', 'error'],
+                        'allow' => true,
+                        'matchCallback' => function() {
+                              return true;
+                        }
+                    ],
+                    [
+                        'actions' => ['update', 'create','delete'],
+                        'allow' => true,
+                        'matchCallback' => function() {
+                            return !\Yii::$app->user->isGuest && \Yii::$app->user->identity->can('editor');
+                        }
+                    ],
+                    [
+                        'actions' => ['index'],
+                        'allow' => true,
+                        'matchCallback' => function() {
+                            return !\Yii::$app->user->isGuest && \Yii::$app->user->identity->can('admin');
+                        }
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -57,7 +59,7 @@ class PageController extends Controller
      */
     public function actionIndex()
     {
-        
+
         $searchModel = new PageSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -74,8 +76,10 @@ class PageController extends Controller
      */
     public function actionView($id)
     {
+        $model = $this->findModel($id);
+        
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $model,
         ]);
     }
 
@@ -86,6 +90,10 @@ class PageController extends Controller
      */
     public function actionCreate()
     {
+//        if (Yii::$app->user->isGuest || !Yii::$app->user->can('editor')) {
+//            return "nu poti";
+//        }
+
         $model = new Page();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -105,15 +113,10 @@ class PageController extends Controller
      */
     public function actionUpdate($id)
     {
-//        echo '---------------<br>';
-//        echo '---------------<br>';
-//        echo '---------------<br>';
-//        echo '---------------<br>';
-//        echo '---------------<br>';
-//        echo '---------------<br>';
-//        
-//        Yii::$app->h->pre(Yii::$app->user->getIsAdmin());
-        
+//        if (Yii::$app->user->isGuest || !Yii::$app->user->can('editor')) {
+//            return "nu poti";
+//        }
+
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {

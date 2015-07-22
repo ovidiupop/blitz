@@ -24,21 +24,21 @@ echo Uploader::widget([
     ],
     'pluginOptions' => [
         'uploadExtraData'=>[
-                'imgFolderPath'=>Yii::getAlias('@images').'/tests',           
+                'imgFolderPath'=>Yii::getAlias('@images').'/test',           
                 'thumbnailSize'=>[320, 200],
-                'multiplePath'=>[
-                    'full'=>false,
-                    'middle'=>[400, 400],
-                    'thumb'=>[150, 150]
-                ],
+//                'multiplePath'=>[
+//                    'full'=>false,
+//                    'middle'=>[400, 400],
+//                    'thumb'=>[150, 150]
+//                ],
                 'filename'=>'the uploaded file on the server.',//product name, etc
                 'lengthOfName'=>237,
                 'slug'=>true,
                 'uniqid'=>true,
-                'dbFields'=>[
-                    'product'=>'22',
-                    'order'=>'999'
-                ]
+//                'dbFields'=>[
+//                    'product'=>'22',
+//                    'order'=>'999'
+//                ]
         ],
     ]
 ]);

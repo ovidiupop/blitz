@@ -23,7 +23,14 @@ class User extends BaseUser
 
     
     public function can($role){
-        $userRole = \backend\models\Roles::find()->where(['user_id'=>$this->id])->one()->role_type_id;
+        $user = \backend\models\Roles::find()->where(['user_id'=>$this->id])->one();
+        
+        if($user == null){
+            return 0;
+        }
+        
+        $userRole = $user->role_type_id;
+        
         $hierarchy = \yii\helpers\ArrayHelper::map(\backend\models\RoleTypes::find()->all(), 'name', 'id');
         $idRole = $hierarchy[$role];
         return $userRole >= $idRole;

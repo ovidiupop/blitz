@@ -11,15 +11,17 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Pages'), 'url' => ['
 $this->params['breadcrumbs'][] = $this->title;
 
 
-echo $model->slug;
-echo "<br>";
+//echo $model->slug;
+//echo "<br>";
 
-echo $model->slugId;
+//echo $model->slugId;
 ?>
+
 <div class="page-view" style="margin-top: 30px;">
 
-    <!--<h1><?= Html::encode($this->title) ?></h1>-->
+    <h1><?= Html::encode($this->title) ?></h1>
 
+    <?php if(!\Yii::$app->user->isGuest && \Yii::$app->user->identity->can('editor')):?>
     <p>
         <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
@@ -31,18 +33,8 @@ echo $model->slugId;
         ]) ?>
         <?= Html::a(Yii::t('app', 'Create'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'alias',
-            'title',
-            'body:ntext',
-            'status',
-            'created_at',
-            'updated_at',
-        ],
-    ]) ?>
-
+    <?php endif;?>
+    
+    <?php echo $model->body;?>
+  
 </div>
